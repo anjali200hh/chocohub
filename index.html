@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choco Hub | Handmade Chocolates</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Poppins,Arial,sans-serif;background:#170a07;color:#fff0dc;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:20px 7%;background:#100604;position:sticky;top:0;z-index:5;border-bottom:1px solid #593923}
+.logo{font:700 29px 'Playfair Display',serif;color:#e8bc72}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{font-size:13px}
+nav a:hover{color:#e8bc72}
+.btn{display:inline-block;background:#e8bc72;color:#211008;padding:12px 23px;border-radius:30px;font-weight:700;font-size:13px;transition:.25s}
+.btn:hover{background:#f5dba7;transform:translateY(-2px)}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:65px 7%;background:linear-gradient(120deg,#32170f,#170a07)}
+.tag,.eyebrow{color:#e8bc72;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2}
+h1{font-size:clamp(42px,5vw,66px);margin:20px 0}
+h1 span{color:#e8bc72}
+.hero p{color:#d0b9a4;margin-bottom:28px;max-width:500px;font-size:14px}
+.hero img{width:100%;height:420px;object-fit:cover;border-radius:16px;border:1px solid #74502f}
+.perks{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;padding:22px;background:#28130d;color:#f5dba7;font-size:13px}
+section{padding:75px 7%}
+.heading{text-align:center;margin-bottom:38px}
+.heading h2,.about h2,.contact h2{font-size:clamp(30px,4vw,43px);margin:12px 0}
+.heading p,.about p,.contact p{color:#d0b9a4;font-size:14px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card{background:#28130d;border:1px solid #593923;border-radius:15px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#e8bc72}
+.card img{width:100%;height:255px;object-fit:cover;background:#3a2115}
+.card-body{padding:21px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{color:#d0b9a4;font-size:13px;min-height:50px}
+.price{color:#e8bc72;font-weight:700;margin-top:14px}
+.order{display:inline-block;color:#e8bc72;font-size:12px;font-weight:700;margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;background:#241109}
+.about img{width:100%;height:380px;object-fit:cover;border-radius:15px}
+.about p{margin:15px 0}
+.quote{text-align:center;padding:65px 7%;background:#0e0503}
+.quote p{font:clamp(24px,3vw,36px)/1.4 'Playfair Display',serif}
+.quote span{display:block;color:#e8bc72;font-size:11px;letter-spacing:3px;margin-top:18px}
+.contact{text-align:center;max-width:850px;margin:auto}
+.contact p{max-width:600px;margin:15px auto 25px}
+footer{text-align:center;background:#0c0402;padding:30px;color:#d0b9a4;font-size:12px;border-top:1px solid #593923}
+footer .logo{display:block;margin-bottom:8px}
+@media(max-width:800px){
+ header{justify-content:center}
+ nav{justify-content:center}
+ .hero,.about{grid-template-columns:1fr}
+ .hero img{height:340px}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+ .products{grid-template-columns:1fr}
+ .hero{padding:45px 6%}
+ .hero img{height:280px}
+ section{padding:55px 6%}
+ nav{gap:13px}
+ nav a{font-size:12px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a href="#home" class="logo">🍫 Choco Hub</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Chocolates</a>
+    <a href="#about">Our Story</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#products" class="btn">Shop Now ↗</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="tag">Handmade with love</div>
+    <h1>A Little bites<br>of <span>Happiness</span></h1>
+    <p>Welcome to Choco Hub, your happy place for homemade chocolates. Discover rich, delicious treats made with care, perfect for gifting, sharing and enjoying.</p>
+    <a href="#products" class="btn">Explore Chocolates →</a>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1400&q=90"
+    alt="Delicious chocolate assortment"
+    fetchpriority="high"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1400&q=85';">
+</section>
+
+<div class="perks">
+  <span>✦ Handmade with Care</span>
+  <span>♡ Perfect for Gifting</span>
+  <span>✧ Sweet Moments, Always</span>
+</div>
+
+<section id="products">
+  <div class="heading">
+    <div class="eyebrow">Our Collection</div>
+    <h2>Discover Our Chocolates</h2>
+    <p>Little handmade treats for every sweet occasion.</p>
+  </div>
+
+  <div class="products">
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?auto=format&fit=crop&w=900&q=85"
+        alt="Classic chocolate bites"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85';">
+      <div class="card-body">
+        <h3>Classic Choco Bites</h3>
+        <p>Rich, smooth chocolate treats for everyday cravings.</p>
+        <div class="price">From ₹149</div>
+        <a href="#contact" class="order">Order Now →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=900&q=85"
+        alt="Chocolate truffles"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1575377427642-087cf684f29d?auto=format&fit=crop&w=900&q=85';">
+      <div class="card-body">
+        <h3>Velvet Truffles</h3>
+        <p>Delicious chocolate bites for a special moment.</p>
+        <div class="price">From ₹199</div>
+        <a href="#contact" class="order">Order Now →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img
+        src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=900&q=85"
+        alt="Chocolate gift assortment"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=900&q=85';">
+      <div class="card-body">
+        <h3>Choco Gift Box</h3>
+        <p>A sweet surprise for birthdays and special occasions.</p>
+        <div class="price">From ₹299</div>
+        <a href="#contact" class="order">Order Now →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img
+    src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=1100&q=85"
+    alt="Chocolate ingredients and chocolates"
+    loading="lazy"
+    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1100&q=85';">
+
+  <div>
+    <div class="eyebrow">Our Story</div>
+    <h2>Made with Love, Shared with Joy.</h2>
+    <p>Choco Hub was created with a simple idea: chocolate makes life's little moments sweeter. We create homemade chocolate treats with care and lots of love.</p>
+    <p>Whether you are treating yourself or gifting someone special, we want every chocolate moment to feel memorable.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+</section>
+
+<div class="quote">
+  <p>“Happiness is homemade… and sometimes covered in chocolate.”</p>
+  <span>SWEET MOMENTS START AT CHOCO HUB</span>
+</div>
+
+<section class="contact" id="contact">
+  <div class="eyebrow">Let's Connect</div>
+  <h2>Ready for Something Sweet?</h2>
+  <p>Message us to ask about flavours, gift boxes, prices and delivery. We'd love to help you find your favourite treat.</p>
+
+  <!-- Replace the sample number with your WhatsApp number.
+       Include country code, without + or spaces. -->
+  <a class="btn"
+     href="https://wa.me/910000000000?text=Hi%20Choco%20Hub%2C%20I%20would%20like%20to%20order%20chocolates."
+     target="_blank" rel="noopener">Order on WhatsApp →</a>
+</section>
+</main>
+
+<footer>
+  <div class="logo">🍫 Choco Hub</div>
+  <p>Homemade happiness, one bite at a time.</p>
+  <p>© 2026 Choco Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>
